@@ -1,0 +1,41 @@
+$ cd /workspace/shadcn-ui
+$ ls
+
+README.md
+components.json
+eslint.config.js
+index.html
+node_modules
+package.json
+pnpm-lock.yaml
+postcss.config.js
+public
+src
+tailwind.config.ts
+template_config.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+$ mkdir -p public/assets/images public/fonts src/components/home src/components/services src/components/resume src/components/work src/components/contact
+
+$ mkdir -p public/assets/images
+
+$ cd public/assets/images && rm profile.jpg && curl -L "https://via.placeholder.com/500x500/111111/00f295?text=Luke+Coleman" -o profile.jpg
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: via.placeholder.com
+$ cd /workspace/shadcn-ui && find public/assets/images -type f
+
+public/assets/images/public/assets/images/profile.svg
+$ cd /workspace/shadcn-ui && rm -rf public/assets/images/public && mkdir -p public/assets/images && cat > public/assets/images/profile.svg << 'EOL'
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#111111"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" fill="#00f295" text-anchor="middle" dominant-baseline="middle">Luke Coleman</text>
+  <circle cx="250" cy="200" r="100" fill="none" stroke="#00f295" stroke-width="4"/>
+  <path d="M250 320 Q250 350 320 380 T250 450" fill="none" stroke="#00f295" stroke-width="4"/>
+  <line x1="180" y1="380" x2="320" y2="380" stroke="#00f295" stroke-width="4"/>
+</svg>
+EOL
+

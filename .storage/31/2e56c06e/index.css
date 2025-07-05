@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme by default - based on #111111 background */
+    --background: 0 0% 6.7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 6.7%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Vibrant green #00f295 as primary/accent color */
+    --primary: 157 100% 47%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 157 100% 47%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 157 100% 47%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 6.7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 157 100% 47%;
+    --sidebar-primary-foreground: 0 0% 9%;
+    --sidebar-accent: 0 0% 14.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 14.9%;
+    --sidebar-ring: 157 100% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-accent {
+    color: #00f295;
+  }
+  
+  .bg-accent {
+    background-color: #00f295;
+  }
+  
+  .border-accent {
+    border-color: #00f295;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6;
+  }
+
+  .animated-dash-circle {
+    stroke-dasharray: 10, 10;
+    animation: dashAnimation 20s linear infinite;
+  }
+
+  @keyframes dashAnimation {
+    to {
+      stroke-dashoffset: -200;
+    }
+  }
+}

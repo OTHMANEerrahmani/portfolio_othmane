@@ -1,0 +1,10 @@
+$ cd /workspace/shadcn-ui && find src -type f -name "*.tsx" | xargs grep -l "error" || echo "No explicit error messages found in TSX files"
+src/components/ui/form.tsx
+$ cd /workspace/shadcn-ui && pnpm list react-hook-form || echo "react-hook-form not found in dependencies"
+
+Legend: production dependency, optional only, dev only
+
+shadcnui /workspace/shadcn-ui
+
+dependencies:
+react-hook-form 7.56.3

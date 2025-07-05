@@ -1,0 +1,31 @@
+$ cd /workspace/shadcn-ui
+$ ls
+
+README.md
+components.json
+eslint.config.js
+index.html
+node_modules
+package.json
+pnpm-lock.yaml
+postcss.config.js
+public
+src
+tailwind.config.ts
+template_config.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+$ mkdir -p public/assets/images public/fonts src/components/home src/components/services src/components/resume src/components/work src/components/contact
+
+$ mkdir -p public/assets/images
+
+$ cd public/assets/images && rm profile.jpg && curl -L "https://via.placeholder.com/500x500/111111/00f295?text=Luke+Coleman" -o profile.jpg
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: via.placeholder.com
+$ cd /workspace/shadcn-ui && find public/assets/images -type f
+
+public/assets/images/public/assets/images/profile.svg

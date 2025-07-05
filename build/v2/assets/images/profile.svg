@@ -1,0 +1,7 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#111111"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" fill="#00f295" text-anchor="middle" dominant-baseline="middle">Luke Coleman</text>
+  <circle cx="250" cy="200" r="100" fill="none" stroke="#00f295" stroke-width="4"/>
+  <path d="M250 320 Q250 350 320 380 T250 450" fill="none" stroke="#00f295" stroke-width="4"/>
+  <line x1="180" y1="380" x2="320" y2="380" stroke="#00f295" stroke-width="4"/>
+</svg>

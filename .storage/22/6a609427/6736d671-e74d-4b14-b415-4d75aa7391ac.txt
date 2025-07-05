@@ -1,0 +1,2 @@
+$ cd /workspace/shadcn-ui && find src -type f -name "*.tsx" | xargs grep -l "error" || echo "No explicit error messages found in TSX files"
+src/components/ui/form.tsx
